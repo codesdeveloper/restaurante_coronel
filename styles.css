@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(24, 162, 248), rgb(25, 25, 141));
+}
+
+header {
+    background: #0004;
+    padding: 7px 0;
+}
+
+header h2 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 0 5px #000;
+}
+
+section {
+    max-width: 600px;
+    margin: 0 auto;
+    min-height: calc(100% - 41px - 38px);
+}
+
+.img-wrap {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+section h2 {
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 0 5px blueviolet;
+}
+
+section form {
+    background: #888c;
+    margin-top: 20px;
+    padding: 10px 30px;
+    display: none;
+}
+
+section form label {
+    font-weight: bold;
+    color: #111;
+}
+
+section form input,
+section form textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 4px 0 10px 0;
+    resize: vertical;
+    max-height: 200px;
+    padding: 5px;
+}
+
+section form textarea {
+    height: 100px;
+    border: 2px solid #000;
+}
+
+section form input[type=file] {
+    width: 100%;
+    color: #fff;
+    resize: none;
+    display: inline;
+    cursor: pointer;
+}
+
+section form progress {
+    width: 100%;
+    margin-bottom: 10px;
+    height: 25px;
+    display: none;
+}
+
+section form .msg {
+    color: red;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    display: none;
+}
+
+section form button {
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background: blue;
+    font-weight: bold;
+}
+
+section ul {
+    margin-top: 30px;
+    display: none;
+}
+
+section ul li {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #fff;
+    padding: 10px 0;
+}
+
+section ul li span {
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+}
+
+section ul li b {
+    font-size: 17px;
+}
+
+section ul li .txt p {
+    padding: 5px 10px;
+    text-align: left;
+    color: #0f0;
+}
+
+section ul li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    background: #000c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.link-adm {
+    position: absolute;
+    top: 7px;
+    right: 90px;
+    background-color: green;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 1px 1px 5px #000, -1px -1px 3px #fff;
+}
+
+.link-adm:hover {
+    box-shadow: 1px 1px 5px #fff, -1px -1px 3px #fff;
+}
+
+.login-adm {
+    width: 400px;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 5px #000, -1px -1px 3px #fff;
+}

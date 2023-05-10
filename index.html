@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Restaurante Coronel</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h2>Restaurante Coronel</h2>
+    </header>
+
+    <section>
+        <div class="img-wrap">
+            <img src="restaurante.jpg" alt="">
+        </div>
+        <h2></h2>
+
+        <form disabled class="cliente-form">
+            <label>Seu nome:
+                <input type="text" />
+            </label>
+            <label>Seu telefone:
+                <input type="number">
+            </label>
+
+            <label>Seu pedido:
+                <textarea placeholder="Digite seu pedido aqui..."></textarea>
+            </label>
+
+            <label>Comprovante de pagamento:
+                <input type="file">
+            </label>
+
+            <progress value="0.1" max="1"></progress>
+
+            <span class="msg">Pedido enviado com sucesso...</span>
+            <button>Enviar Pedido!</button>
+        </form>
+
+        <ul class="adm-ul">
+        </ul>
+
+        <form class="login-adm">
+            <h2 style="margin-bottom: 10px;">Login Administrador</h2>
+            <input placeholder="Email do Administrador" type="email" name="email" />
+            <input type="password" name="password" placeholder="Senha do Administrador">
+            <button type="submit">Acessar!</button>
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Todos os direitos reservado - Restaurante Coronel</p>
+    </footer>
+
+    <a href="/?admin" class="link-adm">Gerenciar</a>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
