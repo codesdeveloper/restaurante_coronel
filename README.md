@@ -7,3 +7,4 @@ email: adm@coronel.com<br/>
 senha: coronel123<br/><br/>
 
 <img src='restaurante_coronel.png'>
+

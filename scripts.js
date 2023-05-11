@@ -80,7 +80,7 @@ let btn_link = document.querySelector('.link-adm');
 
 if (myParam != null) {
 
-  btn_link.href = '/';
+  btn_link.href = '?';
   btn_link.innerHTML = 'Fazer pedido!'
 
 
