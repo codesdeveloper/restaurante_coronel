@@ -13,6 +13,8 @@ const firebaseConfig = {
   appId: "1:328465113579:web:f86c47d56df2ec6cb879ae"
 };
 
+const baseUrl = 'https://leandros8.github.io/restaurante_coronel';
+
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
@@ -80,7 +82,7 @@ let btn_link = document.querySelector('.link-adm');
 
 if (myParam != null) {
 
-  btn_link.href = '?';
+  btn_link.href = baseUrl + '?';
   btn_link.innerHTML = 'Fazer pedido!'
 
 
@@ -138,7 +140,7 @@ if (myParam != null) {
 
 
 } else {
-  btn_link.href = '/?admin';
+  btn_link.href = baseUrl + '/?admin';
   btn_link.innerHTML = 'Gerenciar pedidos!'
   document.querySelector('section h2').innerHTML = 'Faça seu Pedido';
   document.querySelector('section .cliente-form').style.display = 'block';
